@@ -3,21 +3,290 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello</title>
+  <title>Aajish Marahatta</title>
+  <meta name="description" content="Aajish Marahatta — Computer Science (Data Science Track) student at Colorado School of Mines.">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hello, world.</h1>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="#top">Aajish Marahatta</a>
+      <div class="nav-right">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#beyond-code">Beyond Code</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="12" y1="2" x2="12" y2="4"></line>
+            <line x1="12" y1="20" x2="12" y2="22"></line>
+            <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"></line>
+            <line x1="18.4" y1="18.4" x2="19.8" y2="19.8"></line>
+            <line x1="2" y1="12" x2="4" y2="12"></line>
+            <line x1="20" y1="12" x2="22" y2="12"></line>
+            <line x1="4.2" y1="19.8" x2="5.6" y2="18.4"></line>
+            <line x1="18.4" y1="5.6" x2="19.8" y2="4.2"></line>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"></path>
+          </svg>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-  <p>
-    This page is live. That is the only thing it is here to prove.
-  </p>
+  <main id="top">
 
-  <p>
-    Everything about it is yours to delete. Open Claude Code in this folder and
-    tell it what you actually want to build.
-  </p>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Computer Science + Data Science &middot; Colorado School of Mines</p>
+        <h1>Aajish<br>Marahatta</h1>
+        <p class="hero-intro">
+          I'm a Computer Science student at Colorado School of Mines, entering my final semester with a concentration in Data Science. 
+          I'm looking for opportunities involving data analysis, machine learning, and other data-driven work, while also being open to software engineering roles. 
+          My coursework and experience have given me a foundation in both data-focused work and software development, and I'm interested 
+          in continuing to build on both.
 
+        </p>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-photo-frame">
+          <img src="Images/MyPicture.jpg" alt="Aajish Marahatta standing on a soccer field">
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ===== Education ===== -->
+    <section id="education" class="section section-alt">
+      <div class="section-inner">
+        <h2>Education</h2>
+        <div class="education-entry">
+          <h3>Colorado School of Mines</h3>
+          <p class="experience-meta">
+            Bachelor of Science in Computer Science, Concentration in Data Science
+            &middot; Expected Graduation: December 2026
+          </p>
+          <p class="coursework-label">Relevant coursework</p>
+          <ul class="tech-tags">
+            <li>Advanced Software Engineering</li>
+            <li>Advanced Data Science</li>
+            <li>Database Management</li>
+            <li>Statistical Modeling</li>
+            <li>Algorithms</li>
+            <li>Artificial Intelligence</li>
+            <li>Machine Learning</li>
+            <li>Coding with AI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section">
+      <div class="section-inner">
+        <h2>Experience</h2>
+
+        <div class="experience-entry">
+          <p class="experience-date">May 2025 &ndash; Present</p>
+          <div class="experience-body">
+            <h3>Xcel Energy</h3>
+            <p class="experience-role">Technical Intern</p>
+            <ul class="experience-list">
+              <li>Processed ServiceNow tickets to provision secure EMS view-only user accounts and manage access permissions.</li>
+              <li>Maintained internal compliance web content by editing server-hosted HTML files and resolving deployment and file accessibility issues.</li>
+              <li>Executed recurring data synchronization workflows by extracting operational substation data from EATS across PSCo's transmission network and preparing datasets in Microsoft Excel.</li>
+              <li>Supported EMS operations through system troubleshooting and developed foundational knowledge of SCADA, transmission networks, and utility control systems.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-entry">
+          <p class="experience-date">June 2024 &ndash; August 2024</p>
+          <div class="experience-body">
+            <h3>Janus Henderson Investors</h3>
+            <p class="experience-role">Infrastructure Client Services Intern</p>
+            <ul class="experience-list">
+              <li>Created visualizations regarding lender equipment and used the Automated Testing Framework within ServiceNow.</li>
+              <li>Researched and analyzed trailing 12 months tickets for the Global Service Desk to identify equipment and software with the most frequent issues.</li>
+              <li>Collaborated with team members to design and enforce standards around the ticketing resolution system.</li>
+              <li>Conducted testing and debugging activities on the ServiceNow platform, ensuring the quality and reliability of forms within the IT Service Portal.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-entry experience-entry--secondary">
+          <p class="experience-date">November 2021 &ndash; January 2023</p>
+          <div class="experience-body">
+            <h3>The UPS Store</h3>
+            <p class="experience-role">Sales Associate</p>
+            <ul class="experience-list">
+              <li>Worked directly with customers to determine their shipping and packaging needs.</li>
+              <li>Helped customers with returning their Amazon purchases.</li>
+              <li>Packaged fragile items and sorted customer mail.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section section-alt">
+      <div class="section-inner">
+        <h2>Projects</h2>
+        <div class="projects-list">
+
+          <article class="project-row">
+            <p class="project-index">01</p>
+            <div class="project-body">
+              <h3>Distillery Trading Platform</h3>
+              <p class="experience-meta">Capstone Project</p>
+              <p>
+                A five-week capstone project building a functioning B2B e-commerce
+                platform for licensed distilleries: product browsing, inventory
+                management, a shopping cart, user accounts, and in-app messaging, all
+                backed by real-time, persistent data. Built in React with Firebase
+                Authentication and Cloud Firestore, developed with an agile workflow
+                and version control through Git and GitHub.
+              </p>
+              <ul class="tech-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React</li>
+                <li>Firebase Authentication</li>
+                <li>Cloud Firestore</li>
+                <li>Responsive UI</li>
+                <li>Agile</li>
+                <li>Git/GitHub</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-row project-row--secondary">
+            <p class="project-index">02</p>
+            <div class="project-body">
+              <h3>English Premier League Score Prediction</h3>
+              <p class="experience-meta">Advanced Data Science Final Project</p>
+              <p>
+                A predictive machine learning model that forecasts English Premier
+                League match scores from two decades of historical team performance
+                data. Cleaned and transformed a dataset of 9,380 rows and 22 columns
+                spanning 2000&ndash;2025, then engineered and standardized features
+                before reducing dimensionality and comparing a linear regression model
+                against a neural network. It sits right at the intersection of the two
+                things I like following most: data and soccer.
+              </p>
+              <ul class="tech-tags">
+                <li>Python</li>
+                <li>pandas</li>
+                <li>scikit-learn</li>
+                <li>NumPy</li>
+                <li>Matplotlib</li>
+                <li>Linear Regression</li>
+                <li>Neural Networks</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Beyond Code ===== -->
+    <section id="beyond-code" class="section">
+      <div class="section-inner">
+        <h2>Beyond Code</h2>
+        <p class="section-intro">
+          Outside of school and work, I like to be active, whether that means going to the gym or going out for a light walk.
+          I also follow sports closely and like to attend major sporting events whenever I can.
+          I also love to travel and experience new places and cultures. Below are some of the few places and games that I have been to recently.
+        </p>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="Images/Nepal.jpeg" alt="A scenic view from a trip to Nepal">
+            <figcaption>Kailashnath Mahadev Statue &mdash; Sanga, Nepal &mdash; Summer 2023</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="Images/WorldCupGame.jpg" alt="Stadium view of the Argentina vs Switzerland World Cup match">
+            <figcaption>Argentina vs Switzerland &mdash; World Cup 2026 Quarterfinal, Kansas City, MO</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="Images/Spain.jpeg" alt="A scenic view from a trip to Spain">
+            <figcaption>Sagrada Familia &mdash; Barcelona, Spain &mdash; Summer 2025</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="Images/NuggetsGame.jpeg" alt="View from the crowd at a Denver Nuggets playoff game">
+            <figcaption>Nuggets vs Timberwolves &mdash; 2026 NBA Playoffs, First Round, Game 2</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="Images/Australia.jpeg" alt="A scenic view from a trip to Australia">
+            <figcaption>Sydney Opera House &mdash; Sydney, Australia &mdash; Winter 2024</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="Images/TexasStatePark.jpeg" alt="A scenic view of Palo Duro Canyon in Texas">
+            <figcaption>Palo Duro Canyon State Park &mdash; Texas Panhandle &mdash; Summer 2026</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="Images/CopaAmericaGame.jpeg" alt="Crowd view at the Argentina vs Canada Copa America match">
+            <figcaption>Argentina vs Canada &mdash; Copa America 2024, Atlanta, GA</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="Images/LaLigaGame.jpeg" alt="View from the stands at a La Liga match between Villarreal and Real Oviedo">
+            <figcaption>Villarreal vs Real Oviedo &mdash; La Liga 2025&ndash;2026, Villarreal, Spain</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="Images/RapidsGame.jpeg" alt="Crowd view at a Colorado Rapids soccer match">
+            <figcaption>Colorado Rapids vs Real Salt Lake &mdash; MLS 2026 &mdash; Commerce City, CO</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section section-alt contact-section">
+      <div class="section-inner">
+        <h2>Let's connect.</h2>
+        <ul class="contact-list">
+          <li><a href="https://github.com/aajishmarahatta" target="_blank" rel="noopener">GitHub &rarr;</a></li>
+          <li><a href="https://www.linkedin.com/in/aajish-marahatta-928b482a5" target="_blank" rel="noopener">LinkedIn &rarr;</a></li>
+          <li><a href="mailto:amarahatta@mines.edu">Email &rarr;</a></li>
+          <li><a href="Aajish_Marahatta_Resume.pdf">Resume &rarr;</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Aajish Marahatta &middot; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
