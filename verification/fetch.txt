@@ -1,0 +1,16 @@
+$ curl -sI https://aajishmarahatta.github.io/
+HTTP/2 200
+server: GitHub.com
+content-type: text/html; charset=utf-8
+last-modified: Wed, 23 Sep 2026 00:44:06 GMT
+access-control-allow-origin: *
+strict-transport-security: max-age=31556952
+etag: "6ab320d6-3732"
+cache-control: max-age=600
+content-length: 14130
+
+$ curl -s https://aajishmarahatta.github.io/ | grep -o 'id="theme-toggle"'
+id="theme-toggle"
+
+$ curl -s https://aajishmarahatta.github.io/ | grep -o '<title>[^<]*</title>'
+<title>Aajish Marahatta</title>
